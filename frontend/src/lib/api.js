@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://rizwanm42.pythonanywhere.com', // <-- DIRECTLY HARDCODED URL
+  baseURL: 'https://rizwanm42.pythonanywhere.com', // <-- Ensure this is the ONLY baseURL line
 } );
 
 // Add a request interceptor to include the token
