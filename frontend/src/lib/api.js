@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: import.meta.env.PROD 
-    ? 'http://your-username.pythonanywhere.com' // <-- HARDCODED PRODUCTION URL
+    ? 'http://rizwanm42.pythonanywhere.com' // <-- HARDCODED PRODUCTION URL
     : 'http://localhost:5000', // Fallback for local development
 } );
 
