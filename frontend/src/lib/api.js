@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.PROD 
-    ? 'http://rizwanm42.pythonanywhere.com' // <-- HARDCODED PRODUCTION URL
+  baseURL: process.env.NODE_ENV === 'production'
+    ? 'http://rizwanm42.pythonanywhere.com' // <-- Use your PythonAnywhere URL here
     : 'http://localhost:5000', // Fallback for local development
 } );
 
