@@ -1,7 +1,8 @@
 import axios from 'axios';
+import config from '../config'; // Import the new config file
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000', // Fallback to localhost for local development
+  baseURL: config.API_BASE_URL,
 } );
 
 // Add a request interceptor to include the token
